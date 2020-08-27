@@ -34,7 +34,7 @@ app.use(cookieParser());
 
 
 //cors
-if(process.env.NODE_ENV === 'developer') {
+if(process.env.NODE_ENV === 'development') {
     app.use(cors({origin: `${process.env.CLIENT_URL}`}));
 }
 
