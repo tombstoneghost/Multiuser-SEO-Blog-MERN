@@ -36,6 +36,26 @@ const Header = (props) => {
                         </NavItem>
                     </>)}
 
+                    {isAuth() && isAuth().role === 0 && (
+                        <NavItem>
+                            <Link href="/user">
+                                <NavLink>
+                                    Dashboard
+                                </NavLink>
+                            </Link>
+                        </NavItem>
+                    )}
+
+                    {isAuth() && isAuth().role === 1 && (
+                        <NavItem>
+                            <Link href="/admin">
+                                <NavLink>
+                                    Dashboard
+                                </NavLink>
+                            </Link>
+                        </NavItem>
+                    )}
+
                     {isAuth() && (
                         <NavItem>
                             <NavLink style={{cursor: 'pointer'}} onClick={() => signout(() => Router.push('/signin'))}>
