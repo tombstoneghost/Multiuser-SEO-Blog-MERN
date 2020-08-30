@@ -26,16 +26,16 @@ const Header = (props) => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <Link href="/user/crud/blog">
+                        <Link href="/blogs">
                             <NavLink>
-                                Write a Blog
+                                Blogs
                             </NavLink>
                         </Link>
                     </NavItem>
                     <NavItem>
-                        <Link href="/blogs">
+                        <Link href="/contact">
                             <NavLink>
-                                Blogs
+                                Contact
                             </NavLink>
                         </Link>
                     </NavItem>
@@ -83,6 +83,14 @@ const Header = (props) => {
                             </NavLink>
                         </NavItem>
                     )}
+
+                    <NavItem>
+                        <Link href="/user/crud/blog">
+                            <NavLink className="btn btn-outline-secondary">
+                                Write a Blog
+                            </NavLink>
+                        </Link>
+                    </NavItem>
                 </Nav>
             </Collapse>
         </Navbar>
