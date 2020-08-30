@@ -26,6 +26,13 @@ const Header = (props) => {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
+                        <Link href="/user/crud/blog">
+                            <NavLink>
+                                Write a Blog
+                            </NavLink>
+                        </Link>
+                    </NavItem>
+                    <NavItem>
                         <Link href="/blogs">
                             <NavLink>
                                 Blogs
