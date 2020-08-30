@@ -19,9 +19,7 @@ const AdminIndex = () => {
                                     </Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link href="/admin/crud/blog">
-                                        <a>Create Blog</a>
-                                    </Link>
+                                        <a href="/admin/crud/blog">Create Blog</a>
                                 </li>
                                 <li className="list-group-item">
                                     <Link href="/admin/crud/blogs">

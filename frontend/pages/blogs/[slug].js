@@ -34,7 +34,7 @@ const SingleBlog = ({blog, query}) => {
             <meta property="og:title" content={`${blog.title} | ${APP_NAME}`} />
             <meta property="og:description" content={blog.mdesc}/>
             <meta property="og:type" content="website"/>
-            <meta property="og:url" content={`${DOMAIN}${query.slug}`}/>
+            <meta property="og:url" content={`${DOMAIN}/blogs/${query.slug}`}/>
             <meta property="og:site_name" content={`${APP_NAME}`}/>
 
             <meta property="og:image" content={`${API}/blog/photo/${blog.photo}`}/>
