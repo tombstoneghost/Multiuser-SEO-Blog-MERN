@@ -1,6 +1,20 @@
 import fetch from 'isomorphic-fetch';
 import Cookies from 'js-cookie';
 import {API} from '../config';
+import Router from 'next/router'
+
+export const handleResponse = response => {
+    if(response.status === 401) {
+        removeCookie('t');
+        removeLocalStorage('user');
+        Router.push({
+            pathname: '/signin',
+            query: {
+                message: 'Your session is expired. Please signin'
+            }
+        });
+    }
+};
 
 export const signup = (user) => {
     return fetch(`${API}/signup`, {

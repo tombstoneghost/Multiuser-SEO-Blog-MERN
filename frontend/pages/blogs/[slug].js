@@ -7,6 +7,7 @@ import {API, DOMAIN, APP_NAME} from '../../config';
 import moment from 'moment';
 import renderHTML from 'react-render-html';
 import SmallCard from '../../components/blog/SmallCard';
+import DisqusThread from '../../components/DisqusThread';
 
 const SingleBlog = ({blog, query}) => {
     const [related, setRelated] = useState([]);
@@ -69,6 +70,14 @@ const SingleBlog = ({blog, query}) => {
         ));
     };
 
+    const showComments = () => {
+        return(
+            <div>
+                <DisqusThread id={blog._id} title={blog.slug} path={`/blog/${blog.slug}`}/>
+            </div>
+        );
+    };
+
     return(
         <>
             {head()}
@@ -113,7 +122,9 @@ const SingleBlog = ({blog, query}) => {
                             </div>
                         </div>
                         <div className="container pb-5">
-                            <h4 className="text-center pt-5 pb-5 h2">Comments</h4>
+                            <h4 className="text-center pt-5 pb-5 h2">
+                                {showComments()}
+                            </h4>
                         </div>
                     </article>
                 </main>
