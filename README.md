@@ -2,8 +2,21 @@
 A Multi-User Blogging Platform which supports a number of features and is also SEO optimized, supports social logins, separate admin/user dashboards with their own authorized tasks like CRUD operations on Blogs, Categories and Tags.
 
 **Stack:** MERN
-**Reference:** [Udemy Course](https://www.udemy.com/course/react-node-nextjs-fullstack-multi-user-blogging-platform-with-seo/)
 <br>
+**Reference:** [Udemy Course](https://www.udemy.com/course/react-node-nextjs-fullstack-multi-user-blogging-platform-with-seo/)
+
+<br>
+
+## Technologies Used
+ - [React](https://reactjs.org/)
+ - [Node JS](https://nodejs.org/en/)
+ - [Mongo DB](https://www.mongodb.com/)
+ - [Express JS](https://expressjs.com/)
+ - [Next JS](https://nextjs.org/)
+ - [Send Grid](https://sendgrid.com/)
+ - [DISQUS](https://disqus.com/)
+<br>
+
 ### The website has the following features: 
 
  - User Signup/Sign-in
