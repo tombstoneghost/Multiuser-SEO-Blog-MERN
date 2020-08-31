@@ -85,11 +85,9 @@ const Header = (props) => {
                     )}
 
                     <NavItem>
-                        <Link href="/user/crud/blog">
-                            <NavLink className="btn btn-outline-secondary">
+                            <a href="/user/crud/blog" className="btn btn-outline-secondary">
                                 Write a Blog
-                            </NavLink>
-                        </Link>
+                            </a>
                     </NavItem>
                 </Nav>
             </Collapse>

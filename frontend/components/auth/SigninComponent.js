@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import {signin, authenticate, isAuth} from '../../actions/auth';
 import Router from 'next/router';
 import Link from 'next/link';
+import LoginGoogle from './LoginGoogle';
 
 const SigninComponent = () => {
     const [values, setValues] = useState({
@@ -90,6 +91,7 @@ const SigninComponent = () => {
             {showEroor()}
             {showLoading()}
             {showMessage()}
+            <LoginGoogle />
             {signinForm()}
             <br/>
             <div className="text-center">
